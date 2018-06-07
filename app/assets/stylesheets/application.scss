@@ -1,0 +1,55 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+/****************
+ colors
+****************/
+$light-green-pastel-color: #1abc9c;
+$dark-green-pastel-color: #16a085;
+$light-green-color: #2ecc71;
+$dark-green-color: #27ae60;
+$dark-blue-color: #2980b9;
+$light-blue-color: #3498db;
+$dark-purple-color: #8e44ad;
+$light-purple-color: #9b59b6;
+$dark-gray-blue-color: #2c3e50;
+$gray-gray-blue-color: #34495e;
+
+/****************
+ navbar component
+****************/
+.nav-bar {
+  overflow: hidden;
+  background-color: $dark-green-color;
+}
+
+.nav-bar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-bar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-bar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
