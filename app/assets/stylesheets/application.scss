@@ -1,0 +1,65 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+/****************
+ colors by https://flatuicolors.com/
+****************/
+$light-green-pastel-color: #1abc9c;
+$dark-green-pastel-color: #16a085;
+$light-green-color: #2ecc71;
+$dark-green-color: #27ae60;
+$light-blue-color: #3498db;
+$dark-blue-color: #2980b9;
+$light-purple-color: #9b59b6;
+$dark-purple-color: #8e44ad;
+$light-blue-gray-color: #34495e;
+$dark-blue-gray-color: #2c3e50;
+$light-silver-color: #ecf0f1;
+$dark-silver-color: #bdc2c7;
+$light-gray-color: #95a5a6;
+$dark-gray-color: #7f8c8d;
+$light-yellow-collor: #f1c40f;
+$dark-yellow-color: #f39c12;
+$light-orange-color: #e67e22;
+$dark-orange-color: #d35400;
+$light-red-color: #e74c3c;
+$dark-red-color: #c0392b;
+
+/****************
+ navbar component
+****************/
+.nav-bar {
+  overflow: hidden;
+  background-color: $dark-green-pastel-color;
+}
+
+.nav-bar a {
+  float: left;
+  color: $light-silver-color;
+  text-align: center;
+  padding: 1em 1em;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-bar a:hover {
+  background-color: $light-silver-color;
+  color: $dark-green-pastel-color;
+}
+
+.nav-bar a.active {
+  background-color: $light-green-pastel-color;
+  color: white;
+}
